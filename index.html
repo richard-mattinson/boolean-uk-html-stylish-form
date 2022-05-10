@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
+    <title>Say Hello!</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      </style>
   </head>
   <body>
+
+    <div class="user-input">
+
+      <h1>Say Hello!</h1> <br>
+
+      <form>
+          <label for="name">
+              Your Name: <br>
+              <input type="text" id="name" name="name" required placeholder="Enter your name" />  
+          </label> <br>
+
+          <label for="email">
+              Email: <br>
+              <input type="email" id="email" name="email" required placeholder="Enter your email address">
+          </label> <br>
+
+          <label for="services">
+              Needed Services <br>
+              <select name="services" required placeholder="Choose Services">
+                  <option value="cs" >Choose Services</option>
+                  <option value="la"></option>
+                  <option value="bp"></option>
+              </select>
+            </label> <br>
+
+            <label for="services">
+              Budget <br>
+              <select name="services" required placeholder="Budget">
+                  <option value="cs" >Budget</option>
+                  <option value="la"></option>
+                  <option value="bp"></option>
+              </select>
+            </label> <br>
+
+            <label for="message">Message <br>
+              <textarea name="message" id="message" cols="30" rows="3"></textarea>
+            </label>
+
+              <button class="submit" for="submit">
+                Submit
+            </button>
+
+        </form>
 
   </body>
 </html>
