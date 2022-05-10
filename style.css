@@ -75,15 +75,19 @@ h1 {
     text-align: center;
 }
 
-.submit {
+.continue {
     background-image: linear-gradient(to left,rgb(89, 189, 223), rgb(202, 62, 242));
     color: white;
     font-size: 1.2rem;
     border-radius: 30px;
 }
 
-.submit:hover {
-    /* border: solid black 5px; */
+@keyframes valid {
+    from {background-color: rgb(234, 209, 213);}    
+    to {background-color: rgb(221, 237, 221);}
+  }
+
+.continue:hover {
     color: black;
     background-image: linear-gradient(to left,rgb(176, 223, 238), rgb(230, 182, 243));
     text-decoration: underline;
@@ -97,6 +101,16 @@ h1 {
 select {
     font-size: 1.3rem;
 }
+
+input:focus:valid {
+    /* background-color: rgb(221, 237, 221); */
+    animation-name: valid;
+    animation-duration: 1s;
+}
+
+input:focus:invalid {
+    background-color: rgb(234, 209, 213);
+  }
 
 
 
